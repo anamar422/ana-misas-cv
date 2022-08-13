@@ -4,67 +4,91 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;500;700&family=Poppins:wght@200;400;500;700&family=Work+Sans:wght@200;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
     <title>MY CV</title>
 </head>
 <body>
-
-    <header>
+    <!--logo y menu principal-->
+        <header>
         <img src="./img/imagen.svg" alt="logo">
         <nav>
-            <ul>
-                <li><a href="./index.html">home</a></li>
-                <li><a href="./About.html">about</a></li>
-                <li><a href="./Experience.html">experience</a></li>
-                <li><a href="./Contact.html">contact</a></li>
+            <ul id="navheader">
+               <li><a href="./index.html">home</a></li>
+               <li><a href="./About.html">about</a></li>
+               <li><a href="./Experience.html">experience</a></li>
+               <li><a href="./Contact.html">contact</a></li>
             </ul>
         </nav>
         <button>Hire me</button>
      </header>
-     <section>
-    <h1>Import and Export Specialist</h1>
-    <h2> Hi I am Ana Misas</h2>
-    <h3>I make customs operations look easy</h3>
-    <img src="./img/Group 36670.svg" alt="photo Ana">
+     <!--nombre e info principal-->
+     <section id="sectioninfo">
+        <h2> Hi I am <span id="nombre"> Ana Misas</span> </h2>
+        <h1>Import and Export Specialist</h1>
+        <span>I make customs operations look easy</span>
+        <img src="./img/Group 36670.svg" alt="photo Ana" id="imgp">
     </section>
-    <section>
-        <div>
-            <ul>
-                <img src="./img/experience.svg" alt="logo Experience">
-                <li>10 years of experience</li>
-                <img src="./img/completed projects.svg" alt="logo Projects">
-                <li>100+ completed projects</li>
-                <img src="./img/Happy clients.svg" alt="logo Happy Clients">
-                <li>50+ Happy Clients</li>
-            </ul>
+     <!--experiencia-->
+    <section id="experienceinfo">
+        <div class="cajacentral">
+            <img class="logoresumen"src="./img/experience.svg" alt="logo Experience">
+            <div class="splittext">
+                <span class="colornumber">10 +</span>
+                <span>years of experience</span> 
+            </div>
+            <span> > </span>
+        </div>
+        <div class="cajacentral">
+            <img class="logoresumen"src="./img/completed projects.svg" alt="logo Projects">
+            <div class="splittext">
+              <span class="colornumber">100 +</span>
+              <span>completed projects</span>
+            </div> 
+            <span> > </span>           
+        </div>
+        <div class="cajacentral">
+            <img class="logoresumen"src="./img/Happy clients.svg" alt="logo Happy Clients">
+           <div class="splittext">
+              <span class="colornumber">50+ </span>
+              <span>Happy Clients</span>
+           </div>
+           <span> > </span>            
         </div>
     </section>
+      <!--footer-->
      <footer>
-<Section>
-    <h1>ANA MISAS</h1>
-    <h3>Import and Export Specialist</h3>
-    <h4>Useful links</h4>
-    <nav>
-        <ul> 
-            <li><a href="./index.html ">home</a></li>
-            <li><a href="./About.html">about</a></li>
-            <li><a href="./Experience.html">experience</a></li>
-            <li><a href="./Contact.html">contact</a></li>
-        </ul>
-    </nav>
-    <h4>Social Media</h4>
-    <nav>
-        <ul>
+       <div>
+         <h3 id="nombreana">ANA MISAS</h3>
+         <span>Import and Export Specialist</span>
+       </div>
+       <div class="divfooter">
+         <h4 class="h4">Useful links</h4>
+         <ul class="divfooter"> 
+           <li><a href="./index.html ">home</a></li>
+           <li><a href="./About.html">about</a></li>
+           <li><a href="./Experience.html">experience</a></li>
+           <li><a href="./Contact.html">contact</a></li>
+         </ul>
+       </div>
+       <div class="divfooter">  
+          <h4 class="h4">Social Media</h4>
+          <ul class="divfooter">
             <li><a href="https://www.linkedin.com/in/ana-maria-misas-tabares-0ab04418a/">Linkedin</a></li>
             <li><a href="https://github.com/anamar422">Github</a></li>
             <li><a href="https://www.instagram.com/am_ms_ts/">Instagram</a></li>
-        </ul>
-    </nav>
-<h4>Hire me</h4>
-<h5>Enter your email to get my portfolio and CV</h5>
-<h5>Your email address</h5>
-<button><img src="./img/boton correos.svg" alt="correo"></button>
-</section>
-</footer>
-  
+          </ul>
+       </div>
+       <div>
+          <h4 class="h4">Hire me</h4>
+          <li>Enter your email to get my portfolio and CV</li>
+         <div id="sendemail">
+            <li class="cajapequeña">Your email address</li>             
+            <button class="button2"><img src="./img/boton correos.svg" alt="correo"></button>
+         </div>
+       </div>  
+    </footer>
 </body>
 </html>
