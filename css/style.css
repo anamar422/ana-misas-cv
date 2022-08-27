@@ -23,17 +23,22 @@ li{
 
 a{
     text-decoration: none;
-}
-
-a:visited{
     color: white;
 }
+.aHeader{
+    text-decoration: none;
+    color: white;
+}
+
+/* a:visited{
+    color: white;
+} */
 
 a:hover{
     color:#FFB742;
 }
 
-button{
+#buttonHeader{
     background-color: #FFB742;
     color: #212529;
     font-size: 18px;
@@ -44,7 +49,7 @@ button{
     margin: 20px;
 }
 
-#navheader{
+.navheader{
     display:flex;
     justify-content: space-between;
     width: 300px;
@@ -99,6 +104,7 @@ button{
     margin: 20px;
     padding: 40px;
     border-radius: 10px;
+    color: white;
     
 }
  .logoresumen{
@@ -127,6 +133,7 @@ footer{
     display:flex;
     justify-content: space-between;
     align-items: space-between;
+    color:white;
 
 }
 #nombreana{
@@ -145,7 +152,6 @@ footer{
     background-color:#212529 ;
     height: 40px;
     width: 350px;
-    margin: 20px;
     padding: 15px 0px 15px 15px;
     border-radius: 50px;
     border-style: none;
@@ -160,15 +166,18 @@ footer{
     padding: .5px;
     border-radius: 50px;
     border-style: none;
+    margin-bottom: 50px;
+    
 }
 .divfooter{
     display:flex;
     flex-direction: column;
     justify-items: center;
     align-items: center;
+    padding: 5px;
 }
 
-.h4{
+h4{
     color: white;
 }
 
@@ -184,6 +193,19 @@ margin:40px;
     padding: 50px;
     margin: 20px;
     }
+
+.buttonHireMe{
+    background-color: #FFB742;
+    color:black;
+    font-size: 18px;
+    font-weight: 700px;
+    border-radius: 25px;
+    border-style: none;
+    align-items: center;
+    padding: 10px;
+    margin-left: 60px;
+    margin-top:60px;
+}    
 
 .anamisassec{
     display: flex;
@@ -239,14 +261,14 @@ h3{
     color:black;
     font-weight: 700;
 }
-h4{
+.h4{
     color:black;
     font-size: 16px;
     font-weight:400px;
 }
 .cajagrande{
     background-color: white;
-    color:black;
+    color: black;
     font-size: 20px;
     font-weight: 200px;
     height: 350px;
@@ -256,7 +278,6 @@ h4{
     border-radius: 10px;
     border-style: none;
 }
-
 
 #infosection{
     display: flex;
@@ -309,7 +330,7 @@ width:70px;
     border-style: none;
 }
 
-.button3{
+#button3{
     background: #FFB742;
     color:#212529;
     font-size: 18px;
@@ -319,15 +340,20 @@ width:70px;
     border-radius: 50px;
     border-style: none;
     justify-content: right;
+    cursor: pointer;
 }
 
-#contactSmile{
+.button3:active{
+    transform: scale(0.98);
+}
+
+.contactSmile{
     color:white;
     font-size: 30px;
     font-weight: 900;
 }
 
-.Contact{
+.contact{
 display: flex;
 justify-content: center;
 background-color: #292B2E;
@@ -359,4 +385,36 @@ border-style: none;
     padding:10px;
     margin:10px;
     border-bottom: 3px solid #999a9a;
+}
+/* light mode*/
+
+.change-mode-body{
+    background-color: white;
+    color:black;
+}
+
+.change-mode-aHeader{
+    color:black;
+}
+
+.change-mode-cajagrande{
+    background-color: black;
+    color: white;
+}
+.change-mode-h3{
+    color: white;
+}
+.change-mode-h4{
+    color: white;
+}
+.change-mode-contact{
+    background-color: white;
+}
+.change-mode-cajagrande4{
+    background-color: black;
+    color: white;
+}
+
+.change-mode-contactSmile{
+    color:black;
 }
